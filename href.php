@@ -10,9 +10,6 @@ if(preg_match("/(IPv4)(\s*)(\S*)(\s*)(\S\s)*(\d+.\d+.\d+.\d+)/", $result, $match
     unset($value);
 }
 
-echo $server_ip;
-
-
 if (isset($_GET['href'])){
     switch ($_GET['href']){
         case 'dvwa':
