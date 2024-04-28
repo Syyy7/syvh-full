@@ -32,13 +32,15 @@ header .left{
 }
 
 header .right{
-    border: 1px solid #fff;
+    /*border: 1px solid #fff;*/
 
     height: 5vh;
     min-height: 50px;
     max-height: 80px;
 
-    width: 400px;
+    width: 40vw;
+    min-width: 600px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: 20px;
 
@@ -52,10 +54,27 @@ header .right a{
 
     text-decoration: none;
 
-    border: 1px solid #fff;
+    /*border: 1px solid #fff;*/
+    /*border-right: 1px solid #fff;*/
+    /*border-left: 1px solid #fff;*/
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #f3f3f3;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "SimHei" , serif;
+    letter-spacing: 3px;
+    box-shadow: inset 0px 0px 50px rgba(255, 255, 255, 0.2),0 0 50px rgba(255, 255, 255, 0.2);
 }
 
+header .right a:hover{
+    /*background-color: #f3f3f3;*/
+    color: #005cbc;
+}
 
 
 main{
@@ -130,5 +149,13 @@ footer{
     background-color: #223344;
 
     display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #babec2;
 
+    text-align: center;
+}
+
+footer a{
+    color: #005cbc;
 }

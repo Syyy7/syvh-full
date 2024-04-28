@@ -10,15 +10,31 @@ if(preg_match("/(IPv4)(\s*)(\S*)(\s*)(\S\s)*(\d+.\d+.\d+.\d+)/", $result, $match
     unset($value);
 }
 
+$phpV5Port="8181";
+$phpV7Port="8081";
+
 if (isset($_GET['href'])){
     switch ($_GET['href']){
-        case 'dvwa':
-            header("Location: http://$server_ip:8081/dvwa-master");
-            break;
+            case 'dvwa':
+                header("Location: http://$server_ip:$phpV7Port/dvwa-master");
+                break;
 
-        case 'sqli':
-            header("Location: http://$server_ip:8181/sqli-labs-master");
-            break;
+            case 'sqli':
+                header("Location: http://$server_ip:$phpV5Port/sqli-labs-master");
+                break;
+
+            case 'pikachu':
+                header("Location: http://$server_ip:$phpV7Port/pikachu-master");
+                break;
+
+            case 'upload':
+                header("Location: http://$server_ip:$phpV5Port/upload-labs-master");
+                break;
+
+            case 'xss':
+                header("Location: http://$server_ip:$phpV5Port/xss-labs-main");
+                break;
+
             }
 
 }
