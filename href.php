@@ -13,7 +13,7 @@ if(preg_match("/(IPv4)(\s*)(\S*)(\s*)(\S\s)*(\d+.\d+.\d+.\d+)/", $result, $match
 if (isset($_GET['href'])){
     switch ($_GET['href']){
         case 'dvwa':
-            header("Location: http://$server_ip:8080/dvwa-master");
+            header("Location: http://$server_ip:8081/dvwa-master");
             break;
 
         case 'sqli':
