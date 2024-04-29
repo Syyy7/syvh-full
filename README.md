@@ -11,8 +11,9 @@
 * upload-lab:https://github.com/c0ny1/upload-labs
 * sqli-labs:https://github.com/Audi-1/sqli-labs
 
-再次宁谢各位前辈的贡献
-## 使用教程：
-暂时没有
+再次宁谢各位前辈们的贡献
+# 使用教程：
+1. 下载此项目
+2. 在phpstudy中
 
 

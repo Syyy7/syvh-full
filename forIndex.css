@@ -66,7 +66,7 @@ header .right a{
 
     font-size: 1.5rem;
     font-weight: 500;
-    font-family: "SimHei" , serif;
+    font-family: "幼圆" , unserif,"Apple Braille";
     letter-spacing: 3px;
     box-shadow: inset 0px 0px 50px rgba(255, 255, 255, 0.2),0 0 50px rgba(255, 255, 255, 0.2);
 }
@@ -76,14 +76,17 @@ header .right a:hover{
     color: #005cbc;
 }
 
+h1{
+    margin-top: 20px;
+}
 
 main{
     /*border: 1px solid #234;*/
 
     width: 70vw;
     min-width: 900px;
-    height: 60vh;
-    min-height: 500px;
+    height: auto;
+    /*min-height: 500px;*/
 
     display: flex;
     flex-direction: row;
@@ -92,7 +95,8 @@ main{
     align-content: space-around;
     flex-wrap: wrap;
 
-    overflow-y: auto;
+    margin-top: 20px;
+    /*overflow-y: auto;*/
 }
 
 main div{
@@ -143,8 +147,8 @@ main div a{
 footer{
     width: 100vw;
     height: 10vh;
-    min-height: 100px;
-    max-height: 150px;
+    min-height: 150px;
+    max-height: 200px;
     border-top: 1px solid #234;
     background-color: #223344;
 
@@ -154,6 +158,8 @@ footer{
     color: #babec2;
 
     text-align: center;
+
+    margin-top: 40px;
 }
 
 footer a{
