@@ -9,7 +9,8 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    height: auto;
+    overflow-x: hidden;
 }
 
 header{
@@ -18,58 +19,83 @@ header{
     max-height: 80px;
     width: 100vw;
 
-    background-color: #345;
+    background-color: #ddd;
 
     display: flex;
     align-items: center;
+
+    border-bottom: 1px solid #bbb;
+}
+
+header .logo{
+    width: 50px;
+    height: 50px;
+    /*filter: invert(100%);*/
+    margin-left: 20px;
 }
 
 header .left{
-    width: 50px;
-    height: 50px;
-    filter: invert(100%);
-    margin-left: 10px;
+    height: 35px;
+    margin-left: 20px;
+    /*min-height: 50px;*/
+    /*max-height: 80px;*/
+
+    width: 40vw;
+    min-width: 200px;
+    max-width: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    word-spacing: 200px;
 }
 
 header .right{
-    /*border: 1px solid #fff;*/
+    /*border: 1px solid #000;*/
 
     height: 5vh;
     min-height: 50px;
     max-height: 80px;
 
     width: 40vw;
-    min-width: 600px;
-    max-width: 1200px;
+    min-width: 700px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: 20px;
 
     display: flex;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
 }
 
 header .right a{
-    width: 20%;
-    height: 100%;
-
-    text-decoration: none;
-
-    /*border: 1px solid #fff;*/
-    /*border-right: 1px solid #fff;*/
-    /*border-left: 1px solid #fff;*/
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: #f3f3f3;
-
-    font-size: 1.5rem;
-    font-weight: 500;
-    font-family: "幼圆" , unserif,"Apple Braille";
-    letter-spacing: 3px;
-    box-shadow: inset 0px 0px 50px rgba(255, 255, 255, 0.2),0 0 50px rgba(255, 255, 255, 0.2);
+    width: 15%;
+    text-align: center;
+    margin: auto;
 }
+
+/*header .right a{*/
+/*    width: 20%;*/
+/*    height: 100%;*/
+
+/*    text-decoration: none;*/
+
+/*    !*border: 1px solid #fff;*!*/
+/*    !*border-right: 1px solid #fff;*!*/
+/*    !*border-left: 1px solid #fff;*!*/
+
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+
+/*    color: #f3f3f3;*/
+
+/*    font-size: 1.5rem;*/
+/*    font-weight: 500;*/
+/*    font-family: "幼圆" , unserif,"Apple Braille";*/
+/*    letter-spacing: 3px;*/
+/*    box-shadow: inset 0px 0px 50px rgba(255, 255, 255, 0.2),0 0 50px rgba(255, 255, 255, 0.2);*/
+/*}*/
 
 header .right a:hover{
     /*background-color: #f3f3f3;*/
@@ -97,6 +123,7 @@ main{
 
     margin-top: 20px;
     /*overflow-y: auto;*/
+
 }
 
 main div{
@@ -110,6 +137,8 @@ main div{
     min-height: 400px;
     max-height: 800px;
     margin-top: 30px;
+    margin-bottom: 20px;
+
 
     display: flex;
     flex-direction: column;
@@ -149,8 +178,8 @@ footer{
     height: 10vh;
     min-height: 150px;
     max-height: 200px;
-    border-top: 1px solid #234;
-    background-color: #223344;
+    border-top: 1px solid #bbb;
+    background-color: #ddd;
 
     display: flex;
     justify-content: center;
@@ -159,7 +188,12 @@ footer{
 
     text-align: center;
 
-    margin-top: 40px;
+    margin-top: 50px;
+}
+
+footer p{
+    color: #234;
+    margin: 0;
 }
 
 footer a{
