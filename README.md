@@ -5,9 +5,10 @@
  也要感谢前辈们留下留下的宝藏，能给大家留下这么多学习的机会  
  以下是此平台中所有的靶场及出处
 
-* xss-labs:https://github.com/do0dl3/xss-labs
 * DVWA:https://github.com/digininja/DVWA
+* DVWA中文:https://github.com/Basyaact/DVWA-Chinese
 * pikachu:https://github.com/zhuifengshaonianhanlu/pikachu
+* xss-labs:https://github.com/do0dl3/xss-labs
 * upload-lab:https://github.com/c0ny1/upload-labs
 * sqli-labs:https://github.com/Audi-1/sqli-labs
 
