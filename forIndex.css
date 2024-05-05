@@ -97,10 +97,6 @@ header .right a{
 /*    box-shadow: inset 0px 0px 50px rgba(255, 255, 255, 0.2),0 0 50px rgba(255, 255, 255, 0.2);*/
 /*}*/
 
-header .right a:hover{
-    /*background-color: #f3f3f3;*/
-    color: #005cbc;
-}
 
 h1{
     margin-top: 20px;
@@ -198,4 +194,8 @@ footer p{
 
 footer a{
     color: #005cbc;
+}
+
+.d-grid a{
+    margin-top: 15px;
 }

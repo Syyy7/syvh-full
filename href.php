@@ -19,6 +19,10 @@ if (isset($_GET['href'])){
                 header("Location: http://$server_ip:$phpV7Port/dvwa-master");
                 break;
 
+            case 'dvwa-cn':
+                header("Location: http://$server_ip:$phpV7Port/DVWA-Chinese-main");
+                break;
+
             case 'sqli':
                 header("Location: http://$server_ip:$phpV5Port/sqli-labs-master");
                 break;
