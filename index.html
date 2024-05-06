@@ -15,7 +15,7 @@
 
     <div class="right">
         <a href="https://git.sww01.cn/Syyy/syvh-full" class="btn btn-primary" role="button"  target="_blank">项目官网</a>
-        <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helpWord2">提交靶场</a>
+        <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helpWord2">重设数据库</a>
         <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helpWord1">使用文档</a>
     </div>
 
@@ -91,17 +91,22 @@
 
             <!-- 模态框头部 -->
             <div class="modal-header">
-                <h3 class="modal-title">信息</h3>
+                <h3 class="modal-title">数据库重设</h3>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
 
             <!-- 模态框内容 -->
             <div class="modal-body">
-                <h5>抱歉暂未开放</h5>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex"><h4>DVWA</h4><a class="btn btn-primary">重设</a></li>
+                    <li class="list-group-item d-flex"><h4>DVWA中文</h4><a class="btn btn-primary">重设</a></li>
+                    <li class="list-group-item d-flex"><h4>pikachu</h4><a class="btn btn-primary">重设</a></li>
+                </ul>
             </div>
 
             <!-- 模态框底部 -->
             <div class="modal-footer">
+                <button class="btn btn-primary" style="width: 40%;margin-right: auto">全部重设</button>
                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
             </div>
 
@@ -126,6 +131,18 @@
 
             <a class="btn btn-outline-primary" target="_blank" href="https://blog.csdn.net/weixin_42248871/article/details/127574519?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171497726916800222853449%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=171497726916800222853449&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-127574519-null-null.142^v100^pc_search_result_base3&utm_term=dvwa&spm=1018.2226.3001.4187">DVWA 教程</a>
 
+        </div>
+    </div>
+</div>
+
+<div class="position-fixed bottom-0 end-0 p-3">
+    <div id="toast" class="toast show bg-warning" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto">注意</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            如果你是首次使用靶场请点击上方重设数据库
         </div>
     </div>
 </div>
