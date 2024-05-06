@@ -17,13 +17,13 @@
 1. 下载phpstudy并且安装
 2. 在phpstudy的软件管理中下载一个php5.3.29的版本  
    ![](back/readmeImg/1.png)
-3. 在网站管理中更改localhost的默认端口为8081并且php版本为7.34  
+3. 在网站管理中更改localhost的默认端口为8081并且php版本为7.3.4  
    ![](back/readmeImg/2.png)
-4. 创建一个新的站点地址为localhost端口为8181 php版本为5.3.29  
+4. 创建一个新的站点地址为localhost端口为8181 php版本为5.3.29（这两步是为了各个靶场的php版本兼容性而考虑的，sqli-labs和upload-labs等都不能使用太高的版本，而dvwa和pikachu又不能使用太低的版本）  
    ![](back/readmeImg/3.png)
 5. 注意mysql的账户和密码是否是默认的root root，因为靶场数据库配置文件中都已经修改好了默认密码为root root  
    ![](back/readmeImg/4.png)
-6. 此时此刻只要打开你的Apache和mysql服务器，然后访问ip+8081端口即可开始你的学习之旅
+6. 此时此刻只要打开你的Apache和mysql服务器，然后访问ip+8081端口即可开始你的学习之旅（站点中所有靶场的数据库还没有安装，需要找到个靶场的安装地址去进行安装）
 
 ## 其他需要注意的事项
 1. 如果你要做文件包含漏洞就要在php设置中打开文件包含选项  
