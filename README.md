@@ -13,8 +13,11 @@
 * sqli-labs:https://github.com/Audi-1/sqli-labs
 
 再次宁谢各位前辈们的贡献
-# 使用教程：
-1. 下载此项目
-2. 在phpstudy中
+# 仅需要几个步骤即可运行
+1. 下载phpstudy并且安装
+![]()
+2. 在phpstudy的软件管理中下载一个php5的版本
+3. 在网站管理中更改localhost的默认端口为8081并且php版本为7
+4. 创建一个新的站点地址为localhost端口为8181 php版本为5
 
 
