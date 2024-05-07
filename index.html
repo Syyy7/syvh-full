@@ -7,6 +7,7 @@
     <link href="back/css/bootstrap.css" rel="stylesheet">
     <link href="forIndex.css" rel="stylesheet">
     <script src="back/js/bootstrap.js"></script>
+    <script src="back/forIndex.js"></script>
 </head>
 <body>
 <header>
@@ -98,15 +99,16 @@
             <!-- 模态框内容 -->
             <div class="modal-body">
                 <ul class="list-group">
-                    <li class="list-group-item d-flex"><h4>DVWA</h4><a class="btn btn-outline-primary">重置</a></li>
-                    <li class="list-group-item d-flex"><h4>DVWA中文</h4><a class="btn btn-outline-primary">重置</a></li>
-                    <li class="list-group-item d-flex"><h4>pikachu</h4><a class="btn btn-outline-primary">重置</a></li>
+                    <li class="list-group-item d-flex"><h4>DVWA</h4><a class="btn btn-outline-primary" href="/dvwa-master/setup.php?cdb=1" target="_blank">重置</a></li>
+                    <li class="list-group-item d-flex"><h4>DVWA中文</h4><a class="btn btn-outline-primary" href="/dvwa-Chinese-main/setup.php?cdb=1" target="_blank">重置</a></li>
+                    <li class="list-group-item d-flex"><h4>pikachu</h4><a class="btn btn-outline-primary" href="/pikachu-master/install.php?cdb=1" target="_blank">重置</a></li>
                 </ul>
             </div>
 
             <!-- 模态框底部 -->
             <div class="modal-footer">
-                <button class="btn btn-outline-primary" style="width: 40%;margin-right: auto">全部重设</button>
+<!--                <a class="btn btn-outline-primary" style="width: 40%;margin-right: auto;" href="href.php?href=cdb&dbname=all">全部重设</a>-->
+                <button class="btn btn-outline-primary" style="width: 40%;margin-right: auto;" onclick="createdb()">全部重设</button>
                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
             </div>
 

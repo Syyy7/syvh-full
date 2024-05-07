@@ -14,7 +14,7 @@ $mes_create='';
 $mes_data='';
 $mes_ok='';
 
-if(isset($_POST['submit'])){
+if(isset($_POST['submit']) or isset($_GET['cdb'])){
     //判断数据库连接
     if(!@mysqli_connect($dbhost, $dbuser, $dbpw)){
         exit('数据连接失败，请仔细检查inc/config.inc.php的配置');
