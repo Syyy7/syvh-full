@@ -69,7 +69,8 @@ header .right{
 }
 
 header .right a{
-    width: 15%;
+    width: 20%;
+    max-width: 15vw;
     text-align: center;
     margin: auto;
 }
