@@ -15,7 +15,7 @@ $PIKA_ROOT_DIR =  "../../";
 include_once $PIKA_ROOT_DIR . 'header.php';
 
 
-//header("Content-type:text/html; charset=gbk");
+header("Content-type:text/html; charset=gbk");
 $result='';
 
 if(isset($_POST['submit']) && $_POST['ipaddress']!=null){

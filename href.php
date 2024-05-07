@@ -1,5 +1,5 @@
 <?php
-
+//以下的功能是获取本机ip 方便后续的地址跳转
 $server_ip="";
 $result = shell_exec("ipconfig");
 if(preg_match("/(IPv4)(\s*)(\S*)(\s*)(\S\s)*(\d+.\d+.\d+.\d+)/", $result, $match) !== 0){
@@ -9,7 +9,7 @@ if(preg_match("/(IPv4)(\s*)(\S*)(\s*)(\S\s)*(\d+.\d+.\d+.\d+)/", $result, $match
     }
     unset($value);
 }
-
+//php不同版本的端口号，切记站点目录一定是同一个
 $phpV5Port="8181";
 $phpV7Port="8081";
 
