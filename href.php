@@ -45,7 +45,12 @@ if (isset($_GET['href'])){
                 header("Location: http://$server_ip:$phpV5Port/xss-labs-main");
                 break;
 
-            }
+            case 'dedecms':
+                header("Location: http://$server_ip:$phpV5Port/dedecms");
+                break;
+
+
+    }
 
 }
 
