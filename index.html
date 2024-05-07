@@ -99,16 +99,17 @@
             <!-- 模态框内容 -->
             <div class="modal-body">
                 <ul class="list-group">
-                    <li class="list-group-item d-flex"><h4>DVWA</h4><a class="btn btn-outline-primary" href="/dvwa-master/setup.php?cdb=1" target="_blank">重置</a></li>
-                    <li class="list-group-item d-flex"><h4>DVWA中文</h4><a class="btn btn-outline-primary" href="/dvwa-Chinese-main/setup.php?cdb=1" target="_blank">重置</a></li>
-                    <li class="list-group-item d-flex"><h4>pikachu</h4><a class="btn btn-outline-primary" href="/pikachu-master/install.php?cdb=1" target="_blank">重置</a></li>
+                    <li class="list-group-item d-flex"><h4>DVWA</h4><a class="btn btn-outline-primary" href="/href.php?href=cdb&dbname=dvwa" target="_blank">重置</a></li>
+                    <li class="list-group-item d-flex"><h4>DVWA中文</h4><a class="btn btn-outline-primary" href="/href.php?href=cdb&dbname=dvwa-cn" target="_blank">重置</a></li>
+                    <li class="list-group-item d-flex"><h4>sqli-labs</h4><a class="btn btn-outline-primary" href="/href.php?href=cdb&dbname=sqli" target="_blank">重置</a></li>
+                    <li class="list-group-item d-flex"><h4>pikachu</h4><a class="btn btn-outline-primary" href="/href.php?href=cdb&dbname=pikachu" target="_blank">重置</a></li>
                 </ul>
             </div>
 
             <!-- 模态框底部 -->
             <div class="modal-footer">
 <!--                <a class="btn btn-outline-primary" style="width: 40%;margin-right: auto;" href="href.php?href=cdb&dbname=all">全部重设</a>-->
-                <button class="btn btn-outline-primary" style="width: 40%;margin-right: auto;" onclick="createdb()">全部重设</button>
+                <button class="btn btn-outline-primary" style="width: 40%;margin-right: auto;" onclick="window.open('/href.php?href=cdb&dbname=all').location">全部重设</button>
                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
             </div>
 

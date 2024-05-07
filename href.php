@@ -15,6 +15,12 @@ $phpV7Port="8081";
 
 if (isset($_GET['href'])){
     switch ($_GET['href']){
+            case 'cdb':
+                $v5address = $server_ip.":".$phpV5Port;
+                $v7address = $server_ip.":".$phpV7Port;
+                toCreatDB($_GET['dbname'],$v5address,$v7address);
+                break;
+
             case 'dvwa':
                 header("Location: http://$server_ip:$phpV7Port/dvwa-master");
                 break;
@@ -41,4 +47,36 @@ if (isset($_GET['href'])){
 
             }
 
+}
+
+function toCreatDB($dbname,$v5address,$v7address){
+    switch ($dbname){
+        case 'all':
+            echo "<script>window.open('http://$v7address/dvwa-master/setup.php?cdb=1','_blank').location</script>";
+            echo "<script>window.open('http://$v7address/dvwa-Chinese-main/setup.php?cdb=1','_blank').location</script>";
+            echo "<script>window.open('http://$v7address/pikachu-master/install.php?cdb=1','_blank').location</script>";
+            echo "<script>window.open('http://$v5address/sqli-labs-master/sql-connections/setup-db.php','_blank').location</script>";
+            echo "<script>window.close()</script>";
+
+
+        case 'sqli':
+            echo "<script>window.open('http://$v5address/sqli-labs-master/sql-connections/setup-db.php','_blank').location</script>";
+            echo "<script>window.close()</script>";
+            break;
+
+        case 'dvwa':
+            echo "<script>window.open('http://$v7address/dvwa-master/setup.php?cdb=1','_blank').location</script>";
+            echo "<script>window.close()</script>";
+            break;
+
+        case 'dvwa-cn':
+            echo "<script>window.open('http://$v7address/DVWA-Chinese-main/setup.php?cdb=1','_blank').location</script>";
+            echo "<script>window.close()</script>";
+            break;
+
+        case 'pikachu':
+            echo "<script>window.open('http://$v7address/pikachu-master/install.php?cdb=1','_blank').location</script>";
+            echo "<script>window.close()</script>";
+            break;
+    }
 }
